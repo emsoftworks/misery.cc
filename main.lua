@@ -646,11 +646,11 @@ end
 
     local function MenuNameUpdate()
         while (task.wait()) do
-            local Name, PlaceHolder = 'Misery.cc | solara ver by em', ''
+            local Name, PlaceHolder = 'Misery.cc', ''
             for i = 1, #Name do --try
                 local Character = string.sub(Name, i, i)
                 PlaceHolder = PlaceHolder .. Character
-                Menu:SetTitle(PlaceHolder .. '<font color="#' .. tostring(Menu.Accent:ToHex()) .. '">.cc</font>')
+                Menu:SetTitle(PlaceHolder .. '<font color="#' .. tostring(Menu.Accent:ToHex()) .. '">| fixed and polished by emsoftworks</font>')
                 task.wait(.25)
             end
         end
